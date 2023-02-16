@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>movie</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f35cd6f661.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container-fluid p-3">
+    <div class="row">
+      <section class="topBar fixed-top">
+        <nav class="navbar ms-lg-3 d-flex justify-content-start navbar-expand-xxl row mt-3">
+          <div class="col-6 col-md-2 col-xxl-2">
+            <a href="#" class="navbar-brand text-secondary fs-4" style="margin-right: 12%;">
+              Menu
+              <button class="navbar-toggler btn-slide">
+                <i class="topBar-icon d-none fa-solid fa-angle-left"></i>
+                <i class="topBar-icon fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
+          </div> 
+          <div class="col-12 col-md-5 col-xxl-8 order-last">
+            <ul class="nav navbar align-items-start justify-content-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  TV Series
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Movies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Animes
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-5 col-xxl-2 order-md-last">
+            <div class="input-group justify-content-center">
+              <div class="form-outline position-relative">
+                <i class="fa-solid fa-magnifying-glass position-absolute ms-3" style="margin-top: 0.8rem;"></i>
+                <input type="search" name="" id="search-input" class="form-control rounded-pill border-secondary border-2 search-bar" placeholder="search">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <div class="col-2 side-nav h-100">
+        <section class="leftBar">
+        <ul class="nav flex-column navbar align-items-start">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-house"></i>
+                Home
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-church"></i>
+                Community
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-brands fa-cc-discover"></i>
+                Discovery
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-play"></i>
+                Coming soon
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disable">Library</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-house"></i>
+                Resent
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-star"></i>
+                Top Rated
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-download"></i>
+                Downloads
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disable">Category</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-tv"></i>
+                TV - Show
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-film"></i>
+                Movie
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-hippo"></i>
+                Anime
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disable">General</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <div>
+                <i class="fa-solid fa-gear"></i>
+                Settings
+              </div>
+              <div class="red-box"></div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      </div>
+      <div class="col-12 col-lg-8 center" style="margin-top: 5rem;">
+        <div class="movieCard carousel slide m-auto rounded-5" data-bs-ride="carousel" id="carouselId">
+          <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+              <div class="overlay">
+                <img src="img/1.avif" alt="" class="image-fluid movieCard-img">
+              </div>
+              <div class="carousel-caption text-start z-index-master" style="bottom: -15rem;z-index: 100;">
+                <h2 class="movieCard-title text-uppercase">deadpool</h2>
+                <p class="movieCard-geners">acion, dreama</p>
+                <a class="btn btn-danger">Watch</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="overlay">
+                <img src="img/2.jpg" alt="" class="image-fluid movieCard-img">
+              </div>
+              <div class="carousel-caption text-start z-index-master" style="bottom: -15rem;z-index: 100;">
+                <h2 class="movieCard-title text-uppercase">deadpool</h2>
+                <p class="movieCard-geners">acion, dreama</p>
+                <a class="btn btn-danger">Watch</a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselId" data-bs-slide="prev"
+              style="z-index: 100;">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselId" data-bs-slide="next"
+              style="z-index: 100;">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <div class="container bestArtists">
+          <div class="row mb-3">
+            <div class="col-6">
+              <h3>Best Artists</h3>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <button class="btn center-btn border rounded-circle">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="btn center-btn border rounded-circle mx-2">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="row best-artist">
+            <div class="col-md-6 col-xxl-3 mb-4">
+              <div class="artist d-flex flex-column align-items-center justify-content-end p-4 rounded-4"
+                style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/a1.jpg);">
+                <b class="artist-name mb-1">leonardo dicaprio</b>
+                <p class="artist-numberMovie mb-2">+12</p>
+                <div class="artist-stars">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 mb-4">
+              <div class="artist d-flex flex-column align-items-center justify-content-end p-4 rounded-4"
+                style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/a2.jpg);">
+                <b class="artist-name mb-1">Rafi Ahmed Haven</b>
+                <p class="artist-numberMovie mb-2">+15</p>
+                <div class="artist-stars">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 mb-4">
+              <div class="artist d-flex flex-column align-items-center justify-content-end p-4 rounded-4"
+                style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/a3.jpg);">
+                <b class="artist-name mb-1">Zendaya</b>
+                <p class="artist-numberMovie mb-2">+20</p>
+                <div class="artist-stars">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 mb-4">
+              <div class="artist d-flex flex-column align-items-center justify-content-end p-4 rounded-4"
+                style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/a4.jpg);">
+                <b class="artist-name mb-1">Jennifer Lawrence</b>
+                <p class="artist-numberMovie mb-2">+22</p>
+                <div class="artist-stars">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-xxl-2" style="margin-top: 5rem;">
+        <div class="container">
+          <div class="popular text-center text-md-start">
+            <h3 class="mb-3 fs-4">popular movies</h3>
+            <div class="row">
+              <div class="col-md-5 col-lg-12 mb-sm-1">
+                <div class="row">
+                  <div class="col-5">
+                    <img src="img/f1.jpg" alt="" class="image-fluid rounded-3 movie-img">
+                  </div>
+                  <div class="col-6 offset-xxl-1 text-start">
+                    <h4 class="title fs-5">The Flash</h4>
+                    <h5 class="geners text-secondary">
+                      Drama</h5>
+                    <div class="imdb">
+                      <img src="icon/imdb.png" alt="" class="image-fluid">
+                      <span class="rate ms-2">7</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-12 mb-sm-1">
+                <div class="row">
+                  <div class="col-5">
+                    <img src="img/f2.jpg" alt="" class="image-fluid rounded-3 movie-img">
+                  </div>
+                  <div class="col-6 offset-xxl-1 text-start">
+                    <h4 class="title fs-5">Wednesday </h4>
+                    <h5 class="geners text-secondary">
+                      Fantasy, Mystery, Comedy</h5>
+                    <div class="imdb">
+                      <img src="icon/imdb.png" alt="" class="image-fluid">
+                      <span class="rate ms-2">8.2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-12 d-flex align-items-md-center justify-content-center justify-content-lg-start">
+                <button class="btn btn-danger my-1" style="font-size: 0.9rem;">See more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="favorits text-center text-md-start">
+            <h3 class="my-3 fs-4">favorits</h3>
+            <div class="row">
+              <div class="col-md-5 col-lg-12 mb-sm-1">
+                <div class="row">
+                  <div class="col-5">
+                    <img src="img/f3.jpg" alt="" class="image-fluid rounded-3 movie-img">
+                  </div>
+                  <div class="col-6 offset-xxl-1 text-start">
+                    <h4 class="title fs-5">The Last of Us </h4>
+                    <h5 class="geners text-secondary">Drama, Action
+                    </h5>
+                    <div class="imdb">
+                      <img src="icon/imdb.png" alt="" class="image-fluid">
+                      <span class="rate ms-2">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-12 mb-sm-1">
+                <div class="row">
+                  <div class="col-5">
+                    <img src="img/download.jfif" alt="" class="image-fluid rounded-3 movie-img">
+                  </div>
+                  <div class="col-6 offset-xxl-1 text-start">
+                    <h4 class="title fs-5">hope</h4>
+                    <h5 class="geners text-secondary">action</h5>
+                    <div class="imdb">
+                      <img src="icon/imdb.png" alt="" class="image-fluid">
+                      <span class="rate ms-2">7.2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-12 d-flex align-items-md-center justify-content-center justify-content-lg-start">
+                <button class="btn btn-danger my-1" style="font-size: 0.9rem;">See more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
